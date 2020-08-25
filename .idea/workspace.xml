@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="0" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="986c0b90-0f14-4f5f-86b9-89b007034601" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Site" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-end-line="2282" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/main_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10676">
+              <caret line="663" selection-start-line="663" selection-end-line="663" />
+              <folding>
+                <element signature="e#82#116#0" />
+                <element signature="e#123#144#0" />
+                <element signature="e#151#447#0" />
+                <element signature="e#452#513#0" />
+                <element signature="e#557#646#0" />
+                <element signature="e#666#741#0" />
+                <element signature="e#776#852#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/prettydropdowns.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="1232" selection-start-line="1232" selection-end-line="1232" />
+              <folding>
+                <element signature="n#!!block;n#layout#0" />
+                <element signature="n#!!block;n#showchart#0" />
+                <element signature="n#!!block;n#exchangePairSelect#0" />
+                <element signature="n#!!block;n#ExchangePairInitial#0" />
+                <element signature="n#!!block;n#pairSelect#0" />
+                <element signature="n#!!block;n#intervalSelect#0" />
+                <element signature="n#!!block;n#styleSelect#0" />
+                <element signature="n#!!block;n#applyAllExchangePair#0" />
+                <element signature="n#!!block;n#applyAllInterval#0" />
+                <element signature="n#!!block;n#applyAllBarStyle#0" />
+                <element signature="n#!!block;n#applyAllStudies#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package_json" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>USDT</find>
+      <find>&quot;false&quot;</find>
+      <find>&quot;0&quot;</find>
+      <find>themeswitch</find>
+      <find>settings.theme</find>
+      <find>thumb</find>
+      <find>bitso</find>
+      <find>bitstamp</find>
+      <find>bittrex</find>
+      <find>cexio</find>
+      <find>coinbase</find>
+      <find>coinfloor</find>
+      <find>foxbit</find>
+      <find>gemini</find>
+      <find>hitbtc</find>
+      <find>itbit</find>
+      <find>korbit</find>
+      <find>kraken</find>
+      <find>mercado</find>
+      <find>okcoin</find>
+      <find>poloniex</find>
+      <find>therocktrading</find>
+      <find>exchange</find>
+      <find>barstyle</find>
+      <find>checkbox</find>
+      <find>appl</find>
+      <find>https://cryptosplitscreen.weebly.com/files/theme/site-files/images</find>
+      <find>BTCUSD</find>
+      <find>overflow-y:</find>
+      <find>image</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>GEMINI</replace>
+      <replace>BINANCE</replace>
+      <replace>settings.layout</replace>
+      <replace>settings.theme</replace>
+      <replace>layout</replace>
+      <replace>USD</replace>
+      <replace>&quot;false&quot;</replace>
+      <replace>&quot;0&quot;</replace>
+      <replace>&quot;1&quot;</replace>
+      <replace>so</replace>
+      <replace>bitstamp</replace>
+      <replace>bittrex</replace>
+      <replace>cexio</replace>
+      <replace>coinbase</replace>
+      <replace>coinfloor</replace>
+      <replace>foxbit</replace>
+      <replace>gemini</replace>
+      <replace>hitbtc</replace>
+      <replace>itbit</replace>
+      <replace>korbit</replace>
+      <replace>kraken</replace>
+      <replace>mercado</replace>
+      <replace>okcoin</replace>
+      <replace>poloniex</replace>
+      <replace>therocktrading</replace>
+      <replace>wex</replace>
+      <replace>pair</replace>
+      <replace>images</replace>
+      <replace>LTCUSD</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/script.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
+        <option value="$PROJECT_DIR$/Binance.json" />
+        <option value="$PROJECT_DIR$/bitfinex.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.css" />
+        <option value="$PROJECT_DIR$/css/prettydropdowns.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+        <option value="$PROJECT_DIR$/functions.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/files/main_style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-18" />
+    <option name="width" value="1935" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/User/Dropbox/Site/script.js&#10;index&#9;FILE&#9;file://C:/Users/User/Dropbox/Site/index.html" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML&#10;CSS" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Dropbox\Site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Dropbox\Site" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Site/index.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="986c0b90-0f14-4f5f-86b9-89b007034601" name="Default" comment="" />
+      <created>1524192880450</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524192880450</updated>
+      <workItem from="1524192882276" duration="1502000" />
+      <workItem from="1524370822487" duration="660000" />
+      <workItem from="1524943379345" duration="20000" />
+      <workItem from="1525277051990" duration="10000" />
+      <workItem from="1525277164083" duration="21000" />
+      <workItem from="1525283080049" duration="6172000" />
+      <workItem from="1525289281522" duration="8000" />
+      <workItem from="1525289302035" duration="3964000" />
+      <workItem from="1525310506186" duration="2127000" />
+      <workItem from="1525314966474" duration="26084000" />
+      <workItem from="1525440643025" duration="21057000" />
+      <workItem from="1525499871750" duration="14868000" />
+      <workItem from="1525744932692" duration="625000" />
+      <workItem from="1525920612737" duration="17000" />
+      <workItem from="1525920704042" duration="6126000" />
+      <workItem from="1526352907437" duration="14000" />
+      <workItem from="1526422944214" duration="1000" />
+      <workItem from="1526483398524" duration="44350000" />
+      <workItem from="1526667460888" duration="5024000" />
+      <workItem from="1527483287338" duration="2585000" />
+      <workItem from="1527782831168" duration="345000" />
+      <workItem from="1527783909670" duration="599000" />
+      <workItem from="1527796068468" duration="26594000" />
+      <workItem from="1529467281560" duration="141000" />
+      <workItem from="1529467535013" duration="44000" />
+      <workItem from="1529467593955" duration="16000" />
+      <workItem from="1529468365052" duration="7000" />
+      <workItem from="1530283149975" duration="1990000" />
+      <workItem from="1530510492207" duration="3000" />
+      <workItem from="1531200787045" duration="15000" />
+      <workItem from="1532457964647" duration="23000" />
+      <workItem from="1532458030108" duration="12678000" />
+      <workItem from="1533411687695" duration="261000" />
+      <workItem from="1535324317471" duration="123000" />
+      <workItem from="1535324561151" duration="137000" />
+      <workItem from="1535324722313" duration="3403000" />
+      <workItem from="1535342201679" duration="1337000" />
+      <workItem from="1535376237541" duration="8215000" />
+      <workItem from="1535733141882" duration="4180000" />
+      <workItem from="1535863016041" duration="1242000" />
+      <workItem from="1536096719824" duration="576000" />
+      <workItem from="1536170042021" duration="635000" />
+      <workItem from="1536339130362" duration="432000" />
+      <workItem from="1536805216345" duration="2479000" />
+      <workItem from="1537290139864" duration="604000" />
+      <workItem from="1537328612502" duration="1195000" />
+      <workItem from="1537415810134" duration="172000" />
+      <workItem from="1537416021568" duration="1561000" />
+      <workItem from="1537505107355" duration="1200000" />
+      <workItem from="1537754390005" duration="67000" />
+      <workItem from="1537894695726" duration="680000" />
+      <workItem from="1539222175887" duration="1207000" />
+      <workItem from="1539473332729" duration="635000" />
+      <workItem from="1539653052058" duration="608000" />
+      <workItem from="1539745651725" duration="84000" />
+      <workItem from="1540314850988" duration="601000" />
+      <workItem from="1540396253531" duration="112000" />
+      <workItem from="1540495449608" duration="765000" />
+      <workItem from="1541258961941" duration="617000" />
+      <workItem from="1541356558033" duration="626000" />
+      <workItem from="1541568060258" duration="83000" />
+      <workItem from="1541653684711" duration="238000" />
+      <workItem from="1541792658822" duration="1100000" />
+      <workItem from="1542161829386" duration="1053000" />
+      <workItem from="1542334351908" duration="627000" />
+      <workItem from="1542858448191" duration="723000" />
+      <workItem from="1543113773351" duration="601000" />
+      <workItem from="1545264947527" duration="621000" />
+      <workItem from="1545412185958" duration="821000" />
+      <workItem from="1545421100530" duration="2068000" />
+      <workItem from="1546498161701" duration="294000" />
+      <workItem from="1546498536604" duration="1268000" />
+      <workItem from="1546500379467" duration="1206000" />
+      <workItem from="1546632445180" duration="1767000" />
+      <workItem from="1546735435562" duration="28000" />
+      <workItem from="1546813228304" duration="349000" />
+      <workItem from="1546827773086" duration="902000" />
+      <workItem from="1547111923738" duration="599000" />
+      <workItem from="1547168092806" duration="605000" />
+      <workItem from="1547506587952" duration="5000" />
+      <workItem from="1547507609972" duration="596000" />
+      <workItem from="1547763755214" duration="10000" />
+      <workItem from="1548118879841" duration="1306000" />
+      <workItem from="1548179265684" duration="9000" />
+      <workItem from="1548179291213" duration="5638000" />
+      <workItem from="1548562962862" duration="20503000" />
+      <workItem from="1549473923917" duration="820000" />
+      <workItem from="1549737898298" duration="3446000" />
+      <workItem from="1550610527024" duration="4830000" />
+      <workItem from="1551205273698" duration="595000" />
+      <workItem from="1551481212506" duration="942000" />
+      <workItem from="1551818651188" duration="245000" />
+      <workItem from="1551819197500" duration="1857000" />
+      <workItem from="1552325344389" duration="2655000" />
+      <workItem from="1552761988929" duration="595000" />
+      <workItem from="1552925116578" duration="1204000" />
+      <workItem from="1553092599488" duration="602000" />
+      <workItem from="1553380497172" duration="594000" />
+      <workItem from="1553542530798" duration="645000" />
+      <workItem from="1554251460529" duration="611000" />
+      <workItem from="1556120732104" duration="120000" />
+      <workItem from="1558982212076" duration="596000" />
+      <workItem from="1595338273198" duration="758000" />
+      <workItem from="1595423032158" duration="1203000" />
+      <workItem from="1595516692911" duration="601000" />
+      <workItem from="1596027589289" duration="16000" />
+      <workItem from="1596805306929" duration="2414000" />
+      <workItem from="1596844386836" duration="124000" />
+      <workItem from="1597066275956" duration="602000" />
+      <workItem from="1597244323784" duration="602000" />
+      <workItem from="1597323755295" duration="616000" />
+      <workItem from="1597410824991" duration="20000" />
+      <workItem from="1597668897687" duration="91000" />
+      <workItem from="1597678816640" duration="597000" />
+      <workItem from="1597756752977" duration="14000" />
+      <workItem from="1597777473053" duration="6000" />
+      <workItem from="1597778927757" duration="20000" />
+      <workItem from="1597845080059" duration="82000" />
+      <workItem from="1597927750154" duration="903000" />
+      <workItem from="1598013341917" duration="33000" />
+      <workItem from="1598018992428" duration="19000" />
+      <workItem from="1598041228529" duration="598000" />
+      <workItem from="1598273246377" duration="156000" />
+      <workItem from="1598358983794" duration="652000" />
+      <workItem from="1598360503451" duration="1008000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="320484000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Structure" order="0" sideWeight="0.5005314" side_tool="true" weight="0.18020834" />
+      <window_info id="Favorites" order="1" side_tool="true" weight="0.3296875" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49946865" visible="true" weight="0.019494204" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49698433" weight="0.3383948" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4947313" weight="0.13764405" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" sideWeight="0.49947312" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" weight="0.3278867" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5052687" side_tool="true" visible="true" weight="0.30119178" />
+      <window_info anchor="bottom" id="REST Client" order="11" weight="0.3297055" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49946865" visible="true" weight="0.16965227" />
+      <window_info id="Structure" order="1" sideWeight="0.5005314" side_tool="true" weight="0.18020834" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49698433" weight="0.3383948" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4947313" visible="true" weight="0.3017429" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" sideWeight="0.49947312" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5052687" side_tool="true" visible="true" weight="0.3017429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/functions.js</url>
+          <line>970</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bitfinex.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitflyer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bithumb.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitso.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitstamp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bittrex.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4726">
+          <caret line="278" column="1" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cexio.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinbase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinfloor.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foxbit.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gemini.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hitbtc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="633" column="1" selection-start-line="633" selection-start-column="1" selection-end-line="633" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itbit.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/korbit.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kraken.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mercado.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/okcoin.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poloniex.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/therocktrading.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wex.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binance.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://s.tradingview.com/static/bundles/embed_embed_widget.93ea0d66e06a0e619993.js">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/multiple-select.png" />
+    <entry file="file://$PROJECT_DIR$/multiple-select.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.css" />
+    <entry file="file://$PROJECT_DIR$/images/gear.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+    <entry file="file://$PROJECT_DIR$/files/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10676">
+          <caret line="663" selection-start-line="663" selection-end-line="663" />
+          <folding>
+            <element signature="e#82#116#0" />
+            <element signature="e#123#144#0" />
+            <element signature="e#151#447#0" />
+            <element signature="e#452#513#0" />
+            <element signature="e#557#646#0" />
+            <element signature="e#666#741#0" />
+            <element signature="e#776#852#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="1232" selection-start-line="1232" selection-end-line="1232" />
+          <folding>
+            <element signature="n#!!block;n#layout#0" />
+            <element signature="n#!!block;n#showchart#0" />
+            <element signature="n#!!block;n#exchangePairSelect#0" />
+            <element signature="n#!!block;n#ExchangePairInitial#0" />
+            <element signature="n#!!block;n#pairSelect#0" />
+            <element signature="n#!!block;n#intervalSelect#0" />
+            <element signature="n#!!block;n#styleSelect#0" />
+            <element signature="n#!!block;n#applyAllExchangePair#0" />
+            <element signature="n#!!block;n#applyAllInterval#0" />
+            <element signature="n#!!block;n#applyAllBarStyle#0" />
+            <element signature="n#!!block;n#applyAllStudies#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/prettydropdowns.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-end-line="2282" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

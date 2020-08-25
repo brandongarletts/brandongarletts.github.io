@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="files/main_style.css"/>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/prettydropdowns.css">
+    <script src="js/jquery.prettydropdowns.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<script>
+
+    if (typeof localStorage.currentSettings === 'undefined') {
+
+        var settings = {layout:"1",theme:"Dark",buttonpos1:"",buttonpos2:"",exchange1:"GEMINI",exchange2:"GEMINI",
+            exchange3:"GEMINI",exchange4:"GEMINI",exchange5:"GEMINI",exchange6:"GEMINI",exchange7:"GEMINI",
+            exchange8:"GEMINI",exchange9:"GEMINI",exchange10:"GEMINI",exchange11:"GEMINI",exchange12:"GEMINI",
+            exchange13:"GEMINI",exchange14:"GEMINI",exchange15:"GEMINI",exchange16:"GEMINI",exchange17:"GEMINI",
+            exchange18:"GEMINI",exchange19:"GEMINI",exchange20:"GEMINI",exchange21:"GEMINI",exchange22:"GEMINI",
+            exchange23:"GEMINI",exchange24:"GEMINI",pair1:"BTCUSD",pair2:"BTCUSD",pair3:"BTCUSD",pair4:"BTCUSD",
+            pair5:"BTCUSD",pair6:"BTCUSD",pair7:"BTCUSD",pair8:"BTCUSD",pair9:"BTCUSD",pair10:"BTCUSD",
+            pair11:"BTCUSD",pair12:"BTCUSD",pair13:"BTCUSD",pair14:"BTCUSD",pair15:"BTCUSD",pair16:"BTCUSD",
+            pair17:"BTCUSD",pair18:"BTCUSD",pair19:"BTCUSD",pair20:"BTCUSD",pair21:"BTCUSD",pair22:"BTCUSD",
+            pair23:"BTCUSD",pair24:"BTCUSD",interval1:"1",interval2:"5",interval3:"15",interval4:"30",interval5:"60",
+            interval6:"D",interval7:"D",interval8:"D",interval9:"D",interval10:"D",interval11:"D",interval12:"D",
+            interval13:"D",interval14:"D",interval15:"D",interval16:"D",interval17:"D",interval18:"D",interval19:"D",
+            interval20:"D",interval21:"D",interval22:"D",interval23:"D",interval24:"D",style1:"8",style2:"8",style3:"8",
+            style4:"8",style5:"8",style6:"8",style7:"8",style8:"8",style9:"8",style10:"8",style11:"8",style12:"8",
+            style13:"8",style14:"8",style15:"8",style16:"8",style17:"8",style18:"8",style19:"8",style20:"8",style21:"8",
+            style22:"8",style23:"8",style24:"8",draw1:"1",draw2:"1",draw3:"1",draw4:"1",draw5:"1",
+            draw6:"1",draw7:"1",draw8:"1",draw9:"1",draw10:"1",draw11:"1",draw12:"1",
+            draw13:"1",draw14:"1",draw15:"1",draw16:"1",draw17:"1",draw18:"1",draw19:"1",
+            draw20:"1",draw21:"1",draw22:"1",draw23:"1",draw24:"1",studies1:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies2:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies3:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies4:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies5:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies6:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies7:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies8:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies9:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies10:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies11:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies12:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies13:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies14:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies15:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies16:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies17:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies18:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies19:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies20:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies21:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies22:["MAExp@tv-basicstudies","RSI@tv-basicstudies"],studies23:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]
+            ,studies24:["MAExp@tv-basicstudies","RSI@tv-basicstudies"]};
+
+        localStorage.setItem("currentSettings",JSON.stringify(settings));
+
+    } else {
+
+        var settings = JSON.parse(localStorage.getItem('currentSettings'));
+
+         }
+
+
+
+</script>
+<!-- FLoating Settings Button -->
+<div class="container">
+
+    <div id="draggable" >
+
+
+        <div id="settingsDragIcon"><img id="dragIcon" draggable="true" class="image7"></div>
+
+        <img id="settingsIcon" draggable="true" onclick="openNav()">
+
+
+    </div>
+
+</div>
+
+
+<!-- Overlay Menu -->
+<div id="overlayMenu" class="overlay">
+    <div id="logo">
+        <img src="images/Logo.png" alt="Logo"/>
+    </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div id="overlayGrid">
+
+
+
+
+
+            <div id="layoutGrid"  align="center" style=width:100%; >
+
+
+                <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout1.png"
+                             onclick="layout('1')">
+                    </a>
+                </div>                 <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout2.png"
+                             onclick="layout('2')">
+                    </a>
+                </div>                 <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout3.png"
+                             onclick="layout('3')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout4.png"
+                             onclick="layout('4')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout5.png"
+                             onclick="layout('5')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout6.png"
+                             onclick="layout('6')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout7.png"
+                             onclick="layout('7')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout8.png"
+                             onclick="layout('8')">
+                    </a>
+                </div><div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout9.png"
+                             onclick="layout('9')">
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout10.png"
+                             onclick="layout('10')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout11.png"
+                             onclick="layout('11')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout12.png"
+                             onclick="layout('12')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout13.png"
+                             onclick="layout('13')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout14.png"
+                             onclick="layout('14')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout15.png"
+                             onclick="layout('15')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout16.png"
+                             onclick="layout('16')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout17.png"
+                             onclick="layout('17')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout18.png"
+                             onclick="layout('18')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout19.png"
+                             onclick="layout('19')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout20.png"
+                             onclick="layout('20')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout21.png"
+                             onclick="layout('21')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout22.png"
+                             onclick="layout('22')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout23.png"
+                             onclick="layout('23')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout24.png"
+                             onclick="layout('24')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout25.png"
+                             onclick="layout('25')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout26.png"
+                             onclick="layout('26')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout27.png"
+                             onclick="layout('27')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout28.png"
+                             onclick="layout('28')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout29.png"
+                             onclick="layout('29')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout30.png"
+                             onclick="layout('30')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout31.png"
+                             onclick="layout('31')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout32.png"
+                             onclick="layout('32')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout33.png"
+                             onclick="layout('33')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout34.png"
+                             onclick="layout('34')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout35.png"
+                             onclick="layout('35')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout36.png"
+                             onclick="layout('36')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout37.png"
+                             onclick="layout('37')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout38.png"
+                             onclick="layout('38')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout39.png"
+                             onclick="layout('39')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout40.png"
+                             onclick="layout('40')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout41.png"
+                             onclick="layout('41')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout42.png"
+                             onclick="layout('42')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout43.png"
+                             onclick="layout('43')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout44.png"
+                             onclick="layout('44')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout45.png"
+                             onclick="layout('45')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout46.png"
+                             onclick="layout('46')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout47.png"
+                             onclick="layout('47')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout48.png"
+                             onclick="layout('48')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout49.png"
+                             onclick="layout('49')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout50.png"
+                             onclick="layout('50')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout51.png"
+                             onclick="layout('51')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout52.png"
+                             onclick="layout('52')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout53.png"
+                             onclick="layout('53')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout54.png"
+                             onclick="layout('54')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout55.png"
+                             onclick="layout('55')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout56.png"
+                             onclick="layout('56')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout57.png"
+                             onclick="layout('57')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout58.png"
+                             onclick="layout('58')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout59.png"
+                             onclick="layout('59')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout60.png"
+                             onclick="layout('60')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout61.png"
+                             onclick="layout('61')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout62.png"
+                             onclick="layout('62')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout63.png"
+                             onclick="layout('63')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout64.png"
+                             onclick="layout('64')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout65.png"
+                             onclick="layout('65')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout66.png"
+                             onclick="layout('66')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout67.png"
+                             onclick="layout('67')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout68.png"
+                             onclick="layout('68')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout69.png"
+                             onclick="layout('69')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout70.png"
+                             onclick="layout('70')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout71.png"
+                             onclick="layout('71')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout72.png"
+                             onclick="layout('72')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout73.png"
+                             onclick="layout('73')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout74.png"
+                             onclick="layout('74')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout75.png"
+                             onclick="layout('75')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout76.png"
+                             onclick="layout('76')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout77.png"
+                             onclick="layout('77')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout78.png"
+                             onclick="layout('78')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout79.png"
+                             onclick="layout('79')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout80.png"
+                             onclick="layout('80')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout81.png"
+                             onclick="layout('81')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout82.png"
+                             onclick="layout('82')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout83.png"
+                             onclick="layout('83')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout84.png"
+                             onclick="layout('84')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout85.png"
+                             onclick="layout('85')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout86.png"
+                             onclick="layout('86')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout87.png"
+                             onclick="layout('87')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout88.png"
+                             onclick="layout('88')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout89.png"
+                             onclick="layout('89')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout90.png"
+                             onclick="layout('90')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout91.png"
+                             onclick="layout('91')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout92.png"
+                             onclick="layout('92')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout93.png"
+                             onclick="layout('93')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout94.png"
+                             onclick="layout('94')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout95.png"
+                             onclick="layout('95')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout96.png"
+                             onclick="layout('96')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout97.png"
+                             onclick="layout('97')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout98.png"
+                             onclick="layout('98')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout99.png"
+                             onclick="layout('99')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout100.png"
+                             onclick="layout('100')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout101.png"
+                             onclick="layout('101')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout102.png"
+                             onclick="layout('102')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout103.png"
+                             onclick="layout('103')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout104.png"
+                             onclick="layout('104')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout105.png"
+                             onclick="layout('105')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout106.png"
+                             onclick="layout('106')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout107.png"
+                             onclick="layout('107')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout108.png"
+                             onclick="layout('108')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout109.png"
+                             onclick="layout('109')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout110.png"
+                             onclick="layout('110')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout111.png"
+                             onclick="layout('111')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout112.png"
+                             onclick="layout('112')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout113.png"
+                             onclick="layout('113')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout114.png"
+                             onclick="layout('114')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout115.png"
+                             onclick="layout('115')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout116.png"
+                             onclick="layout('116')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout117.png"
+                             onclick="layout('117')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout118.png"
+                             onclick="layout('118')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout119.png"
+                             onclick="layout('119')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout120.png"
+                             onclick="layout('120')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout121.png"
+                             onclick="layout('121')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout122.png"
+                             onclick="layout('122')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout123.png"
+                             onclick="layout('123')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout124.png"
+                             onclick="layout('124')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout125.png"
+                             onclick="layout('125')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout126.png"
+                             onclick="layout('126')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout127.png"
+                             onclick="layout('127')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout128.png"
+                             onclick="layout('128')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout129.png"
+                             onclick="layout('129')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout130.png"
+                             onclick="layout('130')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout131.png"
+                             onclick="layout('131')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout132.png"
+                             onclick="layout('132')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout133.png"
+                             onclick="layout('133')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout134.png"
+                             onclick="layout('134')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout135.png"
+                             onclick="layout('135')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout136.png"
+                             onclick="layout('136')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout137.png"
+                             onclick="layout('137')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout138.png"
+                             onclick="layout('138')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout139.png"
+                             onclick="layout('139')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout140.png"
+                             onclick="layout('140')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout141.png"
+                             onclick="layout('141')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout142.png"
+                             onclick="layout('142')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout143.png"
+                             onclick="layout('143')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout144.png"
+                             onclick="layout('144')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout145.png"
+                             onclick="layout('145')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout146.png"
+                             onclick="layout('146')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout147.png"
+                             onclick="layout('147')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout148.png"
+                             onclick="layout('148')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout149.png"
+                             onclick="layout('149')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout150.png"
+                             onclick="layout('150')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout151.png"
+                             onclick="layout('151')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout152.png"
+                             onclick="layout('152')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout153.png"
+                             onclick="layout('153')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout154.png"
+                             onclick="layout('154')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout155.png"
+                             onclick="layout('155')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout156.png"
+                             onclick="layout('156')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout157.png"
+                             onclick="layout('157')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout158.png"
+                             onclick="layout('158')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout159.png"
+                             onclick="layout('159')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout160.png"
+                             onclick="layout('160')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout161.png"
+                             onclick="layout('161')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout162.png"
+                             onclick="layout('162')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout163.png"
+                             onclick="layout('163')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout164.png"
+                             onclick="layout('164')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout165.png"
+                             onclick="layout('165')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout166.png"
+                             onclick="layout('166')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout167.png"
+                             onclick="layout('167')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout168.png"
+                             onclick="layout('168')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout169.png"
+                             onclick="layout('169')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout170.png"
+                             onclick="layout('170')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout171.png"
+                             onclick="layout('171')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout172.png"
+                             onclick="layout('172')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout173.png"
+                             onclick="layout('173')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout174.png"
+                             onclick="layout('174')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout175.png"
+                             onclick="layout('175')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout176.png"
+                             onclick="layout('176')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout177.png"
+                             onclick="layout('177')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout178.png"
+                             onclick="layout('178')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout179.png"
+                             onclick="layout('179')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout180.png"
+                             onclick="layout('180')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout181.png"
+                             onclick="layout('181')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout182.png"
+                             onclick="layout('182')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout183.png"
+                             onclick="layout('183')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout184.png"
+                             onclick="layout('184')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout185.png"
+                             onclick="layout('185')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout186.png"
+                             onclick="layout('186')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout187.png"
+                             onclick="layout('187')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout188.png"
+                             onclick="layout('188')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout189.png"
+                             onclick="layout('189')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout190.png"
+                             onclick="layout('190')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout191.png"
+                             onclick="layout('191')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout192.png"
+                             onclick="layout('192')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout193.png"
+                             onclick="layout('193')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout194.png"
+                             onclick="layout('194')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout195.png"
+                             onclick="layout('195')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout196.png"
+                             onclick="layout('196')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout197.png"
+                             onclick="layout('197')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout198.png"
+                             onclick="layout('198')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout199.png"
+                             onclick="layout('199')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout200.png"
+                             onclick="layout('200')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout201.png"
+                             onclick="layout('201')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout202.png"
+                             onclick="layout('202')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout203.png"
+                             onclick="layout('203')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout204.png"
+                             onclick="layout('204')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout205.png"
+                             onclick="layout('205')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout206.png"
+                             onclick="layout('206')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout207.png"
+                             onclick="layout('207')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout208.png"
+                             onclick="layout('208')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout209.png"
+                             onclick="layout('209')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout210.png"
+                             onclick="layout('210')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout211.png"
+                             onclick="layout('211')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout212.png"
+                             onclick="layout('212')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout213.png"
+                             onclick="layout('213')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout214.png"
+                             onclick="layout('214')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout215.png"
+                             onclick="layout('215')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout216.png"
+                             onclick="layout('216')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout217.png"
+                             onclick="layout('217')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout218.png"
+                             onclick="layout('218')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout219.png"
+                             onclick="layout('219')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout220.png"
+                             onclick="layout('220')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout221.png"
+                             onclick="layout('221')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout222.png"
+                             onclick="layout('222')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout223.png"
+                             onclick="layout('223')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout224.png"
+                             onclick="layout('224')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout225.png"
+                             onclick="layout('225')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout226.png"
+                             onclick="layout('226')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout227.png"
+                             onclick="layout('227')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout228.png"
+                             onclick="layout('228')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout229.png"
+                             onclick="layout('229')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout230.png"
+                             onclick="layout('230')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout231.png"
+                             onclick="layout('231')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout232.png"
+                             onclick="layout('232')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout233.png"
+                             onclick="layout('233')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout234.png"
+                             onclick="layout('234')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout235.png"
+                             onclick="layout('235')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout236.png"
+                             onclick="layout('236')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout237.png"
+                             onclick="layout('237')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout238.png"
+                             onclick="layout('238')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout239.png"
+                             onclick="layout('239')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout240.png"
+                             onclick="layout('240')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout241.png"
+                             onclick="layout('241')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout242.png"
+                             onclick="layout('242')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout243.png"
+                             onclick="layout('243')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout244.png"
+                             onclick="layout('244')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout245.png"
+                             onclick="layout('245')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout246.png"
+                             onclick="layout('246')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout247.png"
+                             onclick="layout('247')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout248.png"
+                             onclick="layout('248')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout249.png"
+                             onclick="layout('249')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout250.png"
+                             onclick="layout('250')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout251.png"
+                             onclick="layout('251')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout252.png"
+                             onclick="layout('252')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout253.png"
+                             onclick="layout('253')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout254.png"
+                             onclick="layout('254')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout255.png"
+                             onclick="layout('255')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout256.png"
+                             onclick="layout('256')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout257.png"
+                             onclick="layout('257')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout258.png"
+                             onclick="layout('258')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout259.png"
+                             onclick="layout('259')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout260.png"
+                             onclick="layout('260')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout261.png"
+                             onclick="layout('261')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout262.png"
+                             onclick="layout('262')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout263.png"
+                             onclick="layout('263')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout264.png"
+                             onclick="layout('264')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout265.png"
+                             onclick="layout('265')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout266.png"
+                             onclick="layout('266')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout267.png"
+                             onclick="layout('267')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout268.png"
+                             onclick="layout('268')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout269.png"
+                             onclick="layout('269')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout270.png"
+                             onclick="layout('270')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout271.png"
+                             onclick="layout('271')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout272.png"
+                             onclick="layout('272')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout273.png"
+                             onclick="layout('273')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout274.png"
+                             onclick="layout('274')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout275.png"
+                             onclick="layout('275')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout276.png"
+                             onclick="layout('276')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout277.png"
+                             onclick="layout('277')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout278.png"
+                             onclick="layout('278')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout279.png"
+                             onclick="layout('279')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout280.png"
+                             onclick="layout('280')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout281.png"
+                             onclick="layout('281')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout282.png"
+                             onclick="layout('282')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout283.png"
+                             onclick="layout('283')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout284.png"
+                             onclick="layout('284')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout285.png"
+                             onclick="layout('285')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout286.png"
+                             onclick="layout('286')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout287.png"
+                             onclick="layout('287')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout288.png"
+                             onclick="layout('288')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout289.png"
+                             onclick="layout('289')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout290.png"
+                             onclick="layout('290')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout291.png"
+                             onclick="layout('291')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout292.png"
+                             onclick="layout('292')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout293.png"
+                             onclick="layout('293')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout294.png"
+                             onclick="layout('294')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout295.png"
+                             onclick="layout('295')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout296.png"
+                             onclick="layout('296')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout297.png"
+                             onclick="layout('297')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout298.png"
+                             onclick="layout('298')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout299.png"
+                             onclick="layout('299')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout300.png"
+                             onclick="layout('300')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout301.png"
+                             onclick="layout('301')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout302.png"
+                             onclick="layout('302')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout303.png"
+                             onclick="layout('303')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout304.png"
+                             onclick="layout('304')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout305.png"
+                             onclick="layout('305')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout306.png"
+                             onclick="layout('306')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout307.png"
+                             onclick="layout('307')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout308.png"
+                             onclick="layout('308')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout309.png"
+                             onclick="layout('309')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout310.png"
+                             onclick="layout('310')">
+                    </a>
+                </div> <div>
+                    <a>
+                        <img class="imageeight"
+                             src="images/layout311.png"
+                             onclick="layout('311')">
+                    </a>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+            <div id="optionsGrid">
+
+
+
+                <div id="chartOptionsGrid">
+
+                    <div id="chartOptionsGridItem1">
+                <div id="optionsLabel1" class="optionsLabelClass">
+                    <h3>Chart #1</h3>
+                </div>
+                        <div id="optionsHeadingExchangePair1" class="optionsHeadingExchangeClass">
+                            <h3>Exchange/Pair</h3>
+                        </div>
+                <div  id="optionsExchange1" class="optionsExchangeClass">
+
+                    <select title="chart1exchange" id="chart1exchange" onchange="exchangePairSelect(1)">
+                        <option value="BINANCE">BINANCE</option>
+                        <option value="BITFINEX">BITFINEX</option>
+                        <option value="BITFLYER">BITFLYER</option>
+                        <option value="BITHUMB">BITHUMB</option>
+                        <option value="BITSO">BITSO</option>
+                        <option value="BITSTAMP">BITSTAMP</option>
+                        <option value="BITTREX">BITTREX</option>
+                        <option value="CEXIO">CEXIO</option>
+                        <option value="COINBASE">COINBASE</option>
+                        <option value="COINFLOOR">COINFLOOR</option>
+                        <option value="FOXBIT">FOXBIT</option>
+                        <option value="GEMINI">GEMINI</option>
+                        <option value="HITBTC">HITBTC</option>
+                        <option value="ITBIT">ITBIT</option>
+                        <option value="KORBIT">KORBIT</option>
+                        <option value="KRAKEN">KRAKEN</option>
+                        <option value="MERCADO">MERCADO</option>
+                        <option value="OKCOIN">OKCOIN</option>
+                        <option value="POLONIEX">POLONIEX</option>
+                        <option value="THEROCKTRADING">THEROCK</option>
+                        <option value="WEX">WEX</option>
+                    </select>
+
+                </div>
+
+                <div id="optionsPair1" class="optionsPairClass">
+
+                    <select title="chart1pair" id="chart1pair" onchange="pairSelect(1)"></select>
+
+
+                </div>
+<div id="optionsApplyAllExchangePair">
+    <button class="button" onclick="applyAllExchangePair()">Apply All</button>
+
+</div>
+                        <div id="optionsHeadingInterval1" class="optionsHeadingIntervalClass">
+                            <h3>Interval</h3>
+                        </div>
+
+                        <div id="optionsInterval1" class="optionsIntervalClass">
+                    <select title ="chart1interval" id="chart1interval" onchange="intervalSelect(1)">
+                        <option value="1">1m</option>
+                        <option value="3">3m</option>
+                        <option value="5">5m</option>
+                        <option value="15">15m</option>
+                        <option value="30">30m</option>
+                        <option value="60">1h</option>
+                        <option value="120">2h</option>
+                        <option value="180">3h</option>
+                        <option value="240">4h</option>
+                        <option value="D">1D</option>
+                        <option value="W">1W</option>
+                        <option value="M">1M</option>
+                    </select>
+
+                </div>
+                        <div id="optionsApplyAllInterval">
+                            <button class="button" onclick="applyAllInterval()">Apply All</button>
+
+                        </div>
+
+                        <div id="optionsHeadingBar1" class="optionsHeadingBarClass">
+                            <h3>Bar Style</h3>
+                        </div>
+                <div id="optionsBarStyle1" class="optionsHeadingBarStyleClass">
+                    <select title="chart1style" id="chart1style" onchange="styleSelect(1)">
+                        <option value="0">Bars</option>
+                        <option value="1">Candles</option>
+                        <option value="9">Hollow Candles</option>
+                        <option value="8">Heikin Ashi</option>
+                        <option value="2">Line</option>
+                        <option value="3">Area</option>
+
+
+                    </select>
+
+                </div>
+                        <div id="optionsApplyAllBarStyle">
+                            <button class="button" onclick="applyAllBarStyle()">Apply All</button>
+
+                        </div>
+                        <div id="optionsHeadingStudies1" class="optionsHeadingStudiesClass">
+                            <h3>Studies</h3>
+                        </div>
+                        <div id="optionsStudies1" class="optionsStudiesClass">
+                            <select title="chart1studies" id="chart1studies" class="pretty" multiple size="5">
+                                <option value="ACCD@tv-basicstudies">Accumulation/Distribution</option>
+                                <option value="studyADR@tv-basicstudies">ADR</option>
+                                <option value="AROON@tv-basicstudies">Aroon</option>
+                                <option value="ATR@tv-basicstudies">Average True Range</option>
+                                <option value="AwesomeOscillator@tv-basicstudies">Awesome Oscillator</option>
+                                <option value="BB@tv-basicstudies">Bollinger Bands</option>
+                                <option value="BollingerBandsR@tv-basicstudies">Bollinger Bands %B</option>
+                                <option value="BollingerBandsWidth@tv-basicstudies">Bollinger Bands Width</option>
+                                <option value="CMF@tv-basicstudies">Chaikin Money Flow</option>
+                                <option value="ChaikinOscillator@tv-basicstudies">Chaikin Oscillator</option>
+                                <option value="chandeMO@tv-basicstudies">Chande Momentum Oscillator</option>
+                                <option value="ChoppinessIndex@tv-basicstudies">Choppiness Index</option>
+                                <option value="CCI@tv-basicstudies">Commodity Channel Index</option>
+                                <option value="CRSI@tv-basicstudies">ConnorsRSI</option>
+                                <option value="CorrelationCoefficient@tv-basicstudies">Correlation Coefficient</option>
+                                <option value="DetrendedPriceOscillator@tv-basicstudies">Detrended Price Oscillator</option>
+                                <option value="DM@tv-basicstudies">Directional Movement</option>
+                                <option value="DONCH@tv-basicstudies">Donchian Channels</option>
+                                <option value="DoubleEMA@tv-basicstudies">Double EMA</option>
+                                <option value="EaseOfMovement@tv-basicstudies">Ease Of Movement</option>
+                                <option value="EFI@tv-basicstudies">Elder's Force Index</option>
+                                <option value="ENV@tv-basicstudies">Envelope</option>
+                                <option value="FisherTransform@tv-basicstudies">Fisher Transform</option>
+                                <option value="HV@tv-basicstudies">Historical Volatility</option>
+                                <option value="hullMA@tv-basicstudies">Hull Moving Average</option>
+                                <option value="IchimokuCloud@tv-basicstudies">Ichimoku Cloud</option>
+                                <option value="KLTNR@tv-basicstudies">Keltner Channels</option>
+                                <option value="KST@tv-basicstudies">Know Sure Thing</option>
+                                <option value="LinearRegression@tv-basicstudies">Linear Regression</option>
+                                <option value="MACD@tv-basicstudies">MACD</option>
+                                <option value="MOM@tv-basicstudies">Momentum</option>
+                                <option value="MF@tv-basicstudies">Money Flow</option>
+                                <option value="MoonPhases@tv-basicstudies">Moon Phases</option>
+                                <option value="MASimple@tv-basicstudies">Moving Average</option>
+                                <option value="MAExp@tv-basicstudies">Moving Average Exponential</option>
+                                <option value="MAWeighted@tv-basicstudies">Moving Average Weighted</option>
+                                <option value="OBV@tv-basicstudies">On Balance Volume</option>
+                                <option value="PSAR@tv-basicstudies">Parabolic SAR</option>
+                                <option value="PivotPointsHighLow@tv-basicstudies">Pivot Points High Low</option>
+                                <option value="PivotPointsStandard@tv-basicstudies">Pivot Points Standard</option>
+                                <option value="PriceOsc@tv-basicstudies">Price Oscillator</option>
+                                <option value="PriceVolumeTrend@tv-basicstudies">Price Volume Trend</option>
+                                <option value="ROC@tv-basicstudies">Rate Of Change</option>
+                                <option value="RSI@tv-basicstudies">Relative Strength Index</option>
+                                <option value="VigorIndex@tv-basicstudies">Relative Vigor Index</option>
+                                <option value="VolatilityIndex@tv-basicstudies">Relative Volatility Index</option>
+                                <option value="SMIErgodicIndicator@tv-basicstudies">SMI Ergodic Indicator</option>
+                                <option value="SMIErgodicOscillator@tv-basicstudies">SMI Ergodic Oscillator</option>
+                                <option value="Stochastic@tv-basicstudies">Stochastic</option>
+                                <option value="StochasticRSI@tv-basicstudies">Stochastic RSI</option>
+                                <option value="TripleEMA@tv-basicstudies">Triple EMA</option>
+                                <option value="Trix@tv-basicstudies">TRIX</option>
+                                <option value="UltimateOsc@tv-basicstudies">Ultimate Oscillator</option>
+                                <option value="VSTOP@tv-basicstudies">Volatility Stop</option>
+                                <option value="Volume@tv-basicstudies">Volume</option>
+                                <option value="VWAP@tv-basicstudies">VWAP</option>
+                                <option value="MAVolumeWeighted@tv-basicstudies">VWMA</option>
+                                <option value="WilliamR@tv-basicstudies">Williams %R</option>
+                                <option value="WilliamsAlligator@tv-basicstudies">Williams Alligator</option>
+                                <option value="WilliamsFractal@tv-basicstudies">Williams Fractal</option>
+                                <option value="ZigZag@tv-basicstudies">Zig Zag</option>
+
+
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // Initiate Pretty Dropdowns
+                                    $('.pretty').prettyDropdown({
+                                        height: 25,
+                                        classic: true,
+                                        customClass: 'arrow triangle small'
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                        <div id="optionsApplyAllStudies">
+                            <button class="button" onclick="applyAllStudies()">Apply All</button>
+                        </div>
+
+
+                <div id="optionsDrawing1" class="optionsDrawingClass">
+                    <input type="checkbox" id="chart1drawing">
+                </div>
+
+                <div id="optionsHeadingDrawing1" class="optionsHeadingDrawingClass">
+                    <h3>Drawing Tools</h3>
+                </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+<!-- Content -->
+
+<div id="contentwrapper" class="wrapper">
+
+    <div id="chart1">
+    </div>
+    <div id="chart2">
+    </div>
+    <div id="chart3">
+    </div>
+    <div id="chart4">
+    </div>
+    <div id="chart5">
+    </div>
+    <div id="chart6">
+    </div>
+    <div id="chart7">
+    </div>
+    <div id="chart8">
+    </div>
+    <div id="chart9">
+    </div>
+    <div id="chart10">
+    </div>
+    <div id="chart11">
+    </div>
+    <div id="chart12">
+    </div>
+    <div id="chart13">
+    </div>
+    <div id="chart14">
+    </div>
+    <div id="chart15">
+    </div>
+    <div id="chart16">
+    </div>
+    <div id="chart17">
+    </div>
+    <div id="chart18">
+    </div>
+    <div id="chart19">
+    </div>
+    <div id="chart20">
+    </div>
+    <div id="chart21">
+    </div>
+    <div id="chart22">
+    </div>
+    <div id="chart23">
+    </div>
+    <div id="chart24">
+    </div>
+
+
+</div>
+
+<!-- Functions -->
+
+<script src="functions.js"></script>
+
+<script>
+    layout(settings.layout);
+    changeSettingsImageFunctionInitial();
+
+
+
+
+    $(function() {
+        $("[id=draggable]").draggable()
+    });
+
+    $(function(){
+        var sPositions = localStorage.positions || "{}",
+            positions = JSON.parse(sPositions);
+        $.each(positions, function (id, pos) {
+            $("#" + id).css(pos)
+        });
+        $("[id=draggable]").draggable({
+            containment: ".wrapper",
+            scroll: false, iframeFix: true,
+            stop: function (event, ui) {
+                positions[this.id] = ui.position;
+                localStorage.positions = JSON.stringify(positions)
+            }
+        });
+    });
+
+
+    ExchangePairInitial()
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
