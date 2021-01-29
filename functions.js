@@ -1,22 +1,109 @@
 function changeSettingsImageFunction() {
 
 
-	if (settings.theme === "Dark")	
+	if (settings.theme === "30min")
 		{
-	document.getElementById("settingsIcon").src="images/gear2.png";
-	document.getElementById("dragIcon").src="images/drag2.png";
-	settings.theme = "Light";
-	localStorage.setItem("currentSettings",JSON.stringify(settings));
 
-		}
+	settings.theme = "30min";
+
+            var settings = {"layout":"1","theme":"4hr","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
+                "exchange2":"BITTREX","exchange3":"NYSE","exchange4":"NYSE","exchange5":"NYSE",
+                "exchange6":"NYSE","exchange7":"NASDAQ","exchange8":"NASDAQ","exchange9":"NYSE",
+                "exchange10":"NASDAQ","exchange11":"NASDAQ","exchange12":"NYSE","exchange13":"NYSE",
+                "exchange14":"NYSE","exchange15":"NYSE","exchange16":"NYSE","exchange17":"NYSE",
+                "exchange18":"NYSE","exchange19":"NYSE","exchange20":"NYSE","exchange21":"NYSE",
+                "exchange22":"NYSE","exchange23":"NYSE","exchange24":"NYSE","pair1":"LTCUSD",
+                "pair2":"DOGEUSD","pair3":"GME","pair4":"NOK","pair5":"AMC","pair6":"BB","pair7":"NAKD",
+                "pair8":"AMD","pair9":"GM","pair10":"NVDA","pair11":"NFLX","pair12":"FUBO","pair13":"LTCUSD",
+                "pair14":"LTCUSD","pair15":"LTCUSD","pair16":"LTCUSD","pair17":"LTCUSD","pair18":"LTCUSD","pair19":"LTCUSD",
+                "pair20":"LTCUSD","pair21":"LTCUSD","pair22":"LTCUSD","pair23":"LTCUSD","pair24":"LTCUSD","interval1":"30",
+                "interval2":"30","interval3":"30","interval4":"30","interval5":"30","interval6":"30","interval7":"30",
+                "interval8":"30","interval9":"30","interval10":"30","interval11":"30","interval12":"30","interval13":"D",
+                "interval14":"D","interval15":"D","interval16":"D","interval17":"D","interval18":"D","interval19":"D",
+                "interval20":"D","interval21":"D","interval22":"D","interval23":"D","interval24":"D","style1":"8",
+                "style2":"8","style3":"8","style4":"8","style5":"8","style6":"8","style7":"8","style8":"8","style9":"8",
+                "style10":"8","style11":"8","style12":"8","style13":"8","style14":"8","style15":"8","style16":"8",
+                "style17":"8","style18":"8","style19":"8","style20":"8","style21":"8","style22":"8","style23":"8",
+                "style24":"8","draw1":"1","draw2":"1","draw3":"1","draw4":"1","draw5":"1","draw6":"1","draw7":"1",
+                "draw8":"1","draw9":"1","draw10":"1","draw11":"1","draw12":"1","draw13":"1","draw14":"1","draw15":"1",
+                "draw16":"1","draw17":"1","draw18":"1","draw19":"1","draw20":"1","draw21":"1","draw22":"1","draw23":"1",
+                "draw24":"1","studies1":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies2":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies3":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies4":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies5":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies6":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies7":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies8":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies9":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies10":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies11":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies12":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies13":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies14":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies15":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies16":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies17":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies18":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies19":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies20":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies21":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies22":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies23":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies24":["RSI@tv-basicstudies","MACD@tv-basicstudies"]};
+
+
+
+            localStorage.setItem("currentSettings",JSON.stringify(settings));
+            location.reload();
+
+
+
+        }
 	
 	else 
 		{
 		
-	document.getElementById("settingsIcon").src="images/gear.png";
-	document.getElementById("dragIcon").src="images/drag.png";
-	settings.theme = "Dark";
+
+	settings.theme = "4hr";
 	localStorage.setItem("currentSettings",JSON.stringify(settings));
+
+            var settings = {"layout":"1","theme":"30min","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
+                "exchange2":"BITTREX","exchange3":"NYSE","exchange4":"NYSE","exchange5":"NYSE",
+                "exchange6":"NYSE","exchange7":"NASDAQ","exchange8":"NASDAQ","exchange9":"NYSE",
+                "exchange10":"NASDAQ","exchange11":"NASDAQ","exchange12":"NYSE","exchange13":"NYSE",
+                "exchange14":"NYSE","exchange15":"NYSE","exchange16":"NYSE","exchange17":"NYSE",
+                "exchange18":"NYSE","exchange19":"NYSE","exchange20":"NYSE","exchange21":"NYSE",
+                "exchange22":"NYSE","exchange23":"NYSE","exchange24":"NYSE","pair1":"LTCUSD",
+                "pair2":"DOGEUSD","pair3":"GME","pair4":"NOK","pair5":"AMC","pair6":"BB","pair7":"NAKD",
+                "pair8":"AMD","pair9":"GM","pair10":"NVDA","pair11":"NFLX","pair12":"FUBO","pair13":"LTCUSD",
+                "pair14":"LTCUSD","pair15":"LTCUSD","pair16":"LTCUSD","pair17":"LTCUSD","pair18":"LTCUSD","pair19":"LTCUSD",
+                "pair20":"LTCUSD","pair21":"LTCUSD","pair22":"LTCUSD","pair23":"LTCUSD","pair24":"LTCUSD","interval1":"240",
+                "interval2":"240","interval3":"240","interval4":"240","interval5":"240","interval6":"240","interval7":"240",
+                "interval8":"240","interval9":"240","interval10":"240","interval11":"240","interval12":"240","interval13":"240",
+                "interval14":"240","interval15":"240","interval16":"240","interval17":"240","interval18":"D","interval19":"D",
+                "interval20":"D","interval21":"D","interval22":"D","interval23":"D","interval24":"D","style1":"8",
+                "style2":"8","style3":"8","style4":"8","style5":"8","style6":"8","style7":"8","style8":"8","style9":"8",
+                "style10":"8","style11":"8","style12":"8","style13":"8","style14":"8","style15":"8","style16":"8",
+                "style17":"8","style18":"8","style19":"8","style20":"8","style21":"8","style22":"8","style23":"8",
+                "style24":"8","draw1":"1","draw2":"1","draw3":"1","draw4":"1","draw5":"1","draw6":"1","draw7":"1",
+                "draw8":"1","draw9":"1","draw10":"1","draw11":"1","draw12":"1","draw13":"1","draw14":"1","draw15":"1",
+                "draw16":"1","draw17":"1","draw18":"1","draw19":"1","draw20":"1","draw21":"1","draw22":"1","draw23":"1",
+                "draw24":"1","studies1":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies2":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies3":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies4":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies5":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies6":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies7":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies8":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies9":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies10":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies11":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies12":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies13":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies14":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies15":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies16":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies17":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies18":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies19":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies20":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies21":["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+                "studies22":["RSI@tv-basicstudies","MACD@tv-basicstudies"],"studies23":["RSI@tv-basicstudies",
+                    "MACD@tv-basicstudies"],"studies24":["RSI@tv-basicstudies","MACD@tv-basicstudies"]};
+
+
+
+            localStorage.setItem("currentSettings",JSON.stringify(settings));
+            location.reload();
+
+
 
 		}
 	
