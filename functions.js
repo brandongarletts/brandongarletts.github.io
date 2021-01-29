@@ -60,7 +60,7 @@ function layout(layoutValue){
 
     if (layoutValue === "1") {
 
-        ocument.getElementById("contentwrapper").setAttribute("style","grid-template-columns: auto auto auto ");
+        document.getElementById("contentwrapper").setAttribute("style","grid-template-columns: auto auto auto ");
         document.getElementById("chart1").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 1; grid-column-end: 2;");
         document.getElementById("chart2").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 2; grid-column-end: 3;");
         document.getElementById("chart3").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 3; grid-column-end: 4;");
