@@ -60,19 +60,19 @@ function layout(layoutValue){
 
     if (layoutValue === "1") {
 
-        document.getElementById("contentwrapper").setAttribute("style", "grid-template-columns: auto auto;");
-        document.getElementById("chart1").setAttribute("style", "display: ; grid-row-start: 1; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart2").setAttribute("style", "display: ; grid-row-start: 1; grid-column-start: 2; grid-column-end: 2;");
-        document.getElementById("chart3").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart4").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart5").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart6").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart7").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart8").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart9").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart10").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart11").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        document.getElementById("chart12").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
+        ocument.getElementById("contentwrapper").setAttribute("style","grid-template-columns: auto auto auto ");
+        document.getElementById("chart1").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 1; grid-column-end: 2;");
+        document.getElementById("chart2").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 2; grid-column-end: 3;");
+        document.getElementById("chart3").setAttribute("style","display: ; grid-row-start: 1; grid-column-start: 3; grid-column-end: 4;");
+        document.getElementById("chart4").setAttribute("style","display: ; grid-row-start: 2; grid-column-start: 1; grid-column-end: 2;");
+        document.getElementById("chart5").setAttribute("style","display: ; grid-row-start: 2; grid-column-start: 2; grid-column-end: 3;");
+        document.getElementById("chart6").setAttribute("style","display: ; grid-row-start: 2; grid-column-start: 3; grid-column-end: 4;");
+        document.getElementById("chart7").setAttribute("style","display: ; grid-row-start: 3; grid-column-start: 1; grid-column-end: 2;");
+        document.getElementById("chart8").setAttribute("style","display: ; grid-row-start: 3; grid-column-start: 2; grid-column-end: 3;");
+        document.getElementById("chart9").setAttribute("style","display: ; grid-row-start: 3; grid-column-start: 3; grid-column-end: 4;");
+        document.getElementById("chart10").setAttribute("style", "display: ; grid-row-start: 4; grid-column-start: 1; grid-column-end: 2;");
+        document.getElementById("chart11").setAttribute("style", "display: ; grid-row-start: 4; grid-column-start: 2; grid-column-end: 3;");
+        document.getElementById("chart12").setAttribute("style", "display: ; grid-row-start: 4; grid-column-start: 3; grid-column-end: 4;");
         document.getElementById("chart13").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
         document.getElementById("chart14").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
         document.getElementById("chart15").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
@@ -85,7 +85,7 @@ function layout(layoutValue){
         document.getElementById("chart22").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
         document.getElementById("chart23").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
         document.getElementById("chart24").setAttribute("style", "display: none; grid-row-start: 2; grid-column-start: 1; grid-column-end: 1;");
-        showchart(2);
+        showchart(12);
 
     }
     else if (layoutValue === "2") {
