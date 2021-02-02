@@ -1,12 +1,12 @@
 function changeSettingsImageFunction() {
 
 
-	if (settings.theme === "30min")
+	if (settings.interval1 === "240")
 		{
 
-	settings.theme = "30min";
+	settings.interval1 = "240";
 
-            var settings = {"layout":"1","theme":"4hr","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
+            var settings = {"layout":"1","theme":"dark","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
                 "exchange2":"BITTREX","exchange3":"NYSE","exchange4":"NYSE","exchange5":"NYSE",
                 "exchange6":"NYSE","exchange7":"NASDAQ","exchange8":"NASDAQ","exchange9":"NYSE",
                 "exchange10":"NASDAQ","exchange11":"NASDAQ","exchange12":"NYSE","exchange13":"NYSE",
@@ -57,10 +57,10 @@ function changeSettingsImageFunction() {
 		{
 		
 
-	settings.theme = "4hr";
+	settings.interval1 = "30";
 	localStorage.setItem("currentSettings",JSON.stringify(settings));
 
-            var settings = {"layout":"1","theme":"30min","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
+            var settings = {"layout":"1","theme":"dark","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
                 "exchange2":"BITTREX","exchange3":"NYSE","exchange4":"NYSE","exchange5":"NYSE",
                 "exchange6":"NYSE","exchange7":"NASDAQ","exchange8":"NASDAQ","exchange9":"NYSE",
                 "exchange10":"NASDAQ","exchange11":"NASDAQ","exchange12":"NYSE","exchange13":"NYSE",
