@@ -1,10 +1,10 @@
 function changeSettingsImageFunction() {
 
 
-	if (settings.interval1 === "240")
+	if (settings.interval1 === "30")
 		{
 
-	settings.interval1 = "240";
+	settings.interval1 = "30";
 
             var settings = {"layout":"1","theme":"dark","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
                 "exchange2":"BITTREX","exchange3":"NYSE","exchange4":"NYSE","exchange5":"NYSE",
@@ -57,7 +57,7 @@ function changeSettingsImageFunction() {
 		{
 		
 
-	settings.interval1 = "30";
+	settings.interval1 = "240";
 	localStorage.setItem("currentSettings",JSON.stringify(settings));
 
             var settings = {"layout":"1","theme":"dark","buttonpos1":"","buttonpos2":"","exchange1":"COINBASE",
