@@ -1306,7 +1306,19 @@ function intervalSelect(chartNumber) {
 
     let input = document.getElementById('chart'+chartNumber+'interval');
 
-    settings['interval' + chartNumber] = input.value;
+//    settings['interval' + chartNumber] = input.value;
+    settings['interval1'] = input.value;
+    settings['interval2'] = input.value;
+    settings['interval3'] = input.value;
+    settings['interval4'] = input.value;
+    settings['interval5'] = input.value;
+    settings['interval6'] = input.value;
+    settings['interval7'] = input.value;
+    settings['interval8'] = input.value;
+    settings['interval9'] = input.value;
+    settings['interval10'] = input.value;
+    settings['interval11'] = input.value;
+    settings['interval12'] = input.value;
     localStorage.setItem("currentSettings",JSON.stringify(settings));
 }
 
